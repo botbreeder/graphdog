@@ -3,4 +3,6 @@ Graphdog. Better than Graphmaster.
 
 # What the
 
-I know. I gimp'd like a pig.
+I know. I gimped like a pig.
+
+Description's coming soon.
