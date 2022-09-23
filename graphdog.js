@@ -3,7 +3,7 @@
 
 function Graphdog(rules) {
     
-    this.root = { children: {}, content: ()=>{} };
+    this.root = { children: new Map(), content: ()=>{} };
     if (rules) this.add(rules);
 }
 
@@ -27,14 +27,14 @@ Graphdog.prototype.newrule = function(rule) {
     
     for (let item of rule.head) {
         
-        if (!current.children[item]) {
+        if (!current.children.has(item)) {
             
-            current.children[item] = {
-                children: {},
+            current.children.set(item, {
+                children: new Map(),
                 content: ()=>{}
-            };
+            });
         }
-        current = current.children[item];
+        current = current.children.get(item);
     }
     current.content = rule.body;
 };
@@ -47,32 +47,34 @@ Graphdog.prototype.query = function(input, current = this.root, captures = []) {
         return current.content.call(this, captures);
     }
     
-    if (current.children[input[0]])
+    if (current.children.has(input[0]))
         return this.query(
             input.slice(1),
-            current.children[input[0]],
+            current.children.get(input[0]),
             captures
         );
         
-    else if (current.children[this.any]) {
+    else if (current.children.has(this.any)) {
 
         let newCaptures = Array.from(captures);
         newCaptures.push([]);
         let cpos = newCaptures.length-1;
 
         for (let i = 0; i < input.length; i++) {
-            if (current.children[this.any].children[input[i]]) {
+            if (current.children.get(this.any).children.get(input[i])) {
                 let result = this.query(
                     input.slice(i),
-                    current.children[this.any],
+                    current.children.get(this.any),
                     newCaptures
                 );
                 if (result) return result;  
             }
             newCaptures[cpos].push(input[i]);
         }
-        return this.query([], current.children[this.any], newCaptures);
+        return this.query([], current.children.get(this.any), newCaptures);
     }
 };
 
 
+
+if (module) module.exports = Graphdog;
