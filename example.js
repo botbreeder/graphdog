@@ -1,12 +1,12 @@
 const Graphdog = require("./graphdog.js");
 
 
-let any = Graphdog.any;
+let anything = Graphdog.anything;
 
 
 let rules = [
-    //    { head: [-2, any, 4], body: c => 'foo' },
-    //    { head: [-2, any], body: c => 'bazz' },
+    //    { head: [-2, anything, 4], body: c => 'foo' },
+    //    { head: [-2, anything], body: c => 'bazz' },
     //    { head: [-2, +2], body: c => 'bar' }
 ];
 
@@ -15,12 +15,12 @@ for (let i = 0; i < 1000000; i++) {
     let head = [];
 
     for (let j = 0; j < 2 + Math.floor(10 * Math.random()); j++)
-        head.push(Math.random() < 0.25 ? Math.floor(10 * Math.random()) : any);
+        head.push(Math.random() < 0.25 ? Math.floor(10 * Math.random()) : anything);
 
     if (Math.random() < 0.9)
         head.push(Math.floor(10 * Math.random()));
 
-    rules.push({ head, body: c => 'i' + i + ' [' + head.map(e => e == any ? '*' : e.toString()).join(' ') + '] [' + c.map(a => a.join(' ')).join('/') + ']' });
+    rules.push({ head, body: c => 'i' + i + ' [' + head.map(e => e == anything ? '*' : e.toString()).join(' ') + '] [' + c.map(a => a.join(' ')).join('/') + ']' });
 }
 
 

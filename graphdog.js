@@ -9,7 +9,7 @@ function Graphdog(rules) {
 
 
 
-Graphdog.prototype.any = Graphdog.any = Symbol('any');
+Graphdog.prototype.anything = Graphdog.anything = Symbol('anything');
 
 
 
@@ -54,24 +54,24 @@ Graphdog.prototype.query = function(input, current = this.root, captures = []) {
             captures
         );
         
-    else if (current.children.has(this.any)) {
+    else if (current.children.has(this.anything)) {
 
         let newCaptures = Array.from(captures);
         newCaptures.push([]);
         let cpos = newCaptures.length-1;
 
         for (let i = 0; i < input.length; i++) {
-            if (current.children.get(this.any).children.get(input[i])) {
+            if (current.children.get(this.anything).children.get(input[i])) {
                 let result = this.query(
                     input.slice(i),
-                    current.children.get(this.any),
+                    current.children.get(this.anything),
                     newCaptures
                 );
                 if (result) return result;  
             }
             newCaptures[cpos].push(input[i]);
         }
-        return this.query([], current.children.get(this.any), newCaptures);
+        return this.query([], current.children.get(this.anything), newCaptures);
     }
 };
 
