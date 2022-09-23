@@ -17,7 +17,7 @@ for (let i = 0; i < 1000000; i++) {
     for (let j = 0; j < 2 + Math.floor(10 * Math.random()); j++)
         head.push(Math.random() < 0.25 ? Math.floor(10 * Math.random()) : anything);
 
-    if (Math.random() < 0.9)
+    if (Math.random() < 0.99)
         head.push(Math.floor(10 * Math.random()));
 
     rules.push({ head, body: c => 'i' + i + ' [' + head.map(e => e == anything ? '*' : e.toString()).join(' ') + '] [' + c.map(a => a.join(' ')).join('/') + ']' });
