@@ -7,7 +7,7 @@ I know. I gimped like a pig.
 
 So this is just a parser for my upcoming [Mud](https://en.wikipedia.org/wiki/MUD)BASIC interpreter. Except it works more like a chatbot than like a source code parser. The point is to make it fast and tolerant. It will just spit out the most accurate interpretation of a line of code. Since I want to write code like I make pizzas, it will do.
 
-Graphdog will be connected to [EON-Markup](https://github.com/botbreeder/eon-markup), when time comes. This is organic... _a forest of giant self-shaking trees, with dancing nodes on the rhythm of a rule engine._
+Graphdog will be connected to [EON-Markup](https://github.com/botbreeder/eon-markup), when time comes. This is organic... _a natural healthy forest of giant self-shaking trees with dancing nodes on the drum'n bass rhythm of a rule engine._
 
 ```Javascript
 
@@ -42,4 +42,4 @@ The `Graphdog.anything` special value means "one or more values, whatever". It's
 
 ### _Mud?_
 
-Why Mud you ask. Actually the ~conscious~ chatty thingies (the breeding bots) are going to be [situated](https://en.wikipedia.org/wiki/Situated) in [Open City](https://opencity.web.app/), an in-the-pipeline Firebase-backed hackable shared environment where, if you're lucky enough, you might even meet a virtual replica of Ryan Reynolds. How cool is that.
+Why Mud you ask. Actually the ~conscious~ chatty thingies (your breeding bots) are going to be [situated](https://en.wikipedia.org/wiki/Situated) in [Open City](https://opencity.web.app/), an in-the-pipeline Firebase-backed hackable shared environment where, if you're lucky enough, you might even meet a virtual replica of Ryan Reynolds. How cool is that.
