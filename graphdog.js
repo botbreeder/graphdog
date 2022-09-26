@@ -1,6 +1,4 @@
 
-
-
 function Graphdog(rules) {
 
     this.root = { children: new Map(), content: () => { } };
@@ -25,7 +23,9 @@ Graphdog.prototype.newrule = function (rule) {
 
     let current = this.root;
 
-    for (let item of rule.head) {
+    for (let rawItem of rule.head) {
+
+        let item = typeof rawItem === "string" ? rawItem.toLowerCase() : rawItem; 
 
         if (!current.children.has(item)) {
 
@@ -43,14 +43,15 @@ Graphdog.prototype.newrule = function (rule) {
 
 Graphdog.prototype.query = function (input, current = this.root, captures = []) {
 
-    if (input.length == 0) {
+    if (input.length == 0)
         return current.content.call(this, captures);
-    }
 
-    if (current.children.has(input[0]))
+    let first = input[0].toLowerCase();
+
+    if (current.children.has(first))
         return this.query(
             input.slice(1),
-            current.children.get(input[0]),
+            current.children.get(first),
             captures
         );
 
@@ -62,7 +63,7 @@ Graphdog.prototype.query = function (input, current = this.root, captures = []) 
         let anything = current.children.get(this.anything);
 
         for (let i = 1; i < input.length; i++) {
-            if (anything.children.has(input[i])) {
+            if (anything.children.has(input[i].toLowerCase())) {
                 let result = this.query(input.slice(i), anything, newCaptures);
                 if (result) return result;
             }
