@@ -27,7 +27,11 @@ let gdog = new Graphdog(rules);
 
 
 console.log(
-    gdog.query("for I = 1 to 10 step 2".split(' '))
+    gdog.query("for I and J = 1 to 10 step 2".split(' '))
 );
 
+```
+↓
+```
+FOR LOOP STEP [["I","and","J"],["1"],["10"],["2"]]
 ```
