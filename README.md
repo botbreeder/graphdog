@@ -7,7 +7,7 @@ I know. I gimped like a pig.
 
 So this is just a parser for my upcoming [Mud](https://en.wikipedia.org/wiki/MUD)BASIC interpreter. Except it works more like a chatbot than like a source code parser. The point is to make it fast and tolerant. It will just spit out the most accurate interpretation of a line of code. Since I want to write code like I make pizzas, it will do.
 
-Graphdog will be connected to [EON-Markup](https://github.com/botbreeder/eon-markup), when time comes. This is organic... _a natural healthy forest of giant self-shaking trees with dancing nodes on the drum'n bass rhythm of a rule engine._
+Graphdog will be connected to [EON-Markup](https://github.com/botbreeder/eon-markup), when time comes. This is organic... _a natural healthy forest of giant self-shaking trees and dancing nodes on the drum'n bass rhythm of a rule engine._
 
 ```Javascript
 
