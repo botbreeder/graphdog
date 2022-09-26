@@ -40,6 +40,6 @@ FOR LOOP STEP [["I","and","J"],["1"],["10"],["2"]]
 
 Why Mud you ask.
 
-Because heck, the thing is going to be [situated](https://en.wikipedia.org/wiki/Situated). Situated in [Open City](https://opencity.web.app/), an in-the-pipeline Firebase-backed hackable shared environment where, if you're lucky enough, you might even meet a virtual replica of Ryan Reynolds.
+Because heck, the thing is going to be [situated](https://en.wikipedia.org/wiki/Situated) in [Open City](https://opencity.web.app/), an in-the-pipeline Firebase-backed hackable shared environment where, if you're lucky enough, you might even meet a virtual replica of Ryan Reynolds.
 
 How cool is that.
