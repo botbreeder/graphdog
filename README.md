@@ -36,6 +36,8 @@ console.log(
 FOR LOOP STEP [["I","and","J"],["1"],["10"],["2"]]
 ```
 
+Graphdog doesn't take only strings. Any Javascript value can appear in the queried sequences and in the rules. Match is done based on the [SameValueZero](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality) algorithm, since nodes have their children under [maps](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
+
 ### _Mud?_
 
 Why Mud you ask.
