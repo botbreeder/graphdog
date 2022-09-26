@@ -36,7 +36,7 @@ console.log(
 FOR LOOP STEP [["I","and","J"],["1"],["10"],["2"]]
 ```
 
-Graphdog doesn't take only strings. **Any Javascript value** can appear in the queried sequences and in the rules. Matching is done based on the [SameValueZero](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality) algorithm, because Graphdog's nodes have their children under [Maps](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
+Graphdog doesn't take only strings. **Any Javascript value** can appear in the queried sequences and in the triggers. Matching is done based on the [SameValueZero](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality) algorithm, because Graphdog's nodes have their children under [Maps](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
 
 The `Graphdog.anything` special value means "one or more values, whatever". It's like the wildcard of a glob-pattern, or like the plus-star of an eBNF. But remember: it's not _zero_ or more, it's **ONE** or more.
 
