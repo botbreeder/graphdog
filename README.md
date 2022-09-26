@@ -38,4 +38,4 @@ FOR LOOP STEP [["I","and","J"],["1"],["10"],["2"]]
 
 ### _Mud?_
 
-_Why Mud you ask. Because heck, the thing is going to be [situated](https://en.wikipedia.org/wiki/Situated). Situated in [Open City](https://opencity.web.app/), a firebase-backed hackable shared environment where, if you're lucky enough, you might even meet a virtual replica of Ryan Reynolds._
+Why Mud you ask. Because heck, the thing is going to be [situated](https://en.wikipedia.org/wiki/Situated). Situated in [Open City](https://opencity.web.app/), a firebase-backed hackable shared environment where, if you're lucky enough, you might even meet a virtual replica of Ryan Reynolds.
