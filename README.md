@@ -36,12 +36,12 @@ console.log(
 FOR LOOP STEP [["I","and","J"],["1"],["10"],["2"]]
 ```
 
-Graphdog doesn't take only strings. Any Javascript value can appear in the queried sequences and in the rules. Match is done based on the [SameValueZero](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality) algorithm, since nodes have their children under [maps](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
+Graphdog doesn't take only strings. Any Javascript value can appear in the queried sequences and in the rules. Match is done based on the [SameValueZero](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value-zero_equality) algorithm because Graphdog's nodes have their children under [maps](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
 
 ### _Mud?_
 
 Why Mud you ask.
 
-Because heck, the thing is going to be [situated](https://en.wikipedia.org/wiki/Situated) in [Open City](https://opencity.web.app/), an in-the-pipeline Firebase-backed hackable shared environment **where**, if you're lucky enough, you might even meet a virtual replica of Ryan Reynolds.
+Because the conscious thingies are going to be [situated](https://en.wikipedia.org/wiki/Situated) in [Open City](https://opencity.web.app/), an in-the-pipeline Firebase-backed hackable shared environment where, if you're lucky enough, you might even meet a virtual replica of Ryan Reynolds.
 
 How cool is that.
